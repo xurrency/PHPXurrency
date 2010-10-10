@@ -1,0 +1,25 @@
+= PHPXurrency
+
+PHPXurrency is simple PHP5 library in order to integrate Xurrency API in your application.
+
+== Usage
+
+Simple example
+
+  require_once 'PHPXurrency.php';
+
+  $xurrency = new PHPXurrency();
+
+  echo $xurrency->getRate('eur', 'usd', 3); // It converts 3 euros into 3 US dollars
+
+  echo $xurrency->getUpdatedAt('eur', 'usd'); // Returns last time when the data was updated
+
+If you have a Xurrency API key, you can add it by doing:
+
+  $xurrency = new PHPXurrency('YOUR_API_KEY');
+
+If you want to find out how to adquire an API key, please go to http://xurrency.com/license
+
+== License
+
+See LICENSE for details
